@@ -9,13 +9,24 @@
         android:id="@+id/fragment_signIn"
         android:name="com.eighteam.ojek.ui.auth.signIn.SignInFragment"
         tools:layout="@layout/fragment_sign_in">
+
+        <action android:id="@+id/action_signUp"
+            app:destination="@+id/fragment_signUp"/>
     </fragment>
 
     <fragment
         android:id="@+id/fragment_signUp"
         android:name="com.eighteam.ojek.ui.auth.signUp.SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
+
+        <action android:id="@+id/action_signUp_success"
+            app:destination="@+id/fragment_signUp_success"/>
     </fragment>
+
+    <fragment
+        android:id="@+id/fragment_signUp_success"
+        android:name="com.eighteam.ojek.ui.auth.signUp.SignUpSuccessFragment"
+        tools:layout="@layout/fragment_sign_up_success"/>
 
 
 </navigation>

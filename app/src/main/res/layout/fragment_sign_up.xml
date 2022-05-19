@@ -97,7 +97,7 @@
 
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnSignUp2"
         android:text="@string/sign_up"
         android:textAllCaps="false"
         android:layout_marginTop="24dp"

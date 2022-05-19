@@ -51,7 +51,7 @@
         tools:ignore="Autofill" />
 
     <Button
-        android:id="@+id/btnSignin"
+        android:id="@+id/btnSignIn"
         android:text="@string/sign_in"
         android:textAllCaps="false"
         android:layout_marginTop="24dp"
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btnSignup"
+        android:id="@+id/btnSignUp"
         android:text="@string/create_new_account"
         android:textAllCaps="false"
         android:layout_marginTop="12dp"
