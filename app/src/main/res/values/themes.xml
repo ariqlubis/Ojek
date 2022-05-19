@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Ojek" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="Theme.Ojek" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,7 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    
+
     <style name="TextView"/>
     <style name="TextView.PoppinsNormal32sp020202">
         <item name="android:fontFamily">@font/poppins</item>
@@ -69,4 +69,10 @@
         <item name="android:textSize">14sp</item>
         <item name="android:background">@drawable/shape_rectangle_8_8d92a3</item>
     </style>
+    <style name="Theme.Ojek.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Ojek.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Ojek.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_signIn"
+    android:id="@+id/nav_auth">
+
+    <fragment
+        android:id="@+id/fragment_signIn"
+        android:name="com.eighteam.ojek.ui.auth.signIn.SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_signUp"
+        android:name="com.eighteam.ojek.ui.auth.signUp.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+    </fragment>
+
+
+</navigation>

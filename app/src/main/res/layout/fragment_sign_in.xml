@@ -26,9 +26,10 @@
         android:background="@drawable/shape_rectangle_outline_8_020202"
         android:fontFamily="@font/poppins"
         android:hint="@string/type_your_email_address"
+        android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:padding="10dp"
-        android:inputType="textPassword" />
+        tools:ignore="Autofill" />
 
     <TextView
         android:layout_marginTop="16dp"
@@ -46,7 +47,8 @@
         android:hint="@string/type_your_password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        tools:ignore="Autofill" />
 
     <Button
         android:id="@+id/btnSignin"
