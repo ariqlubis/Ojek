@@ -25,4 +25,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="ojek">OJEK</string>
     <string name="sign_up_success">Sign Up Success!!!</string>
+    <string name="search_for_a_pickup">Search for a pickup</string>
+    <string name="search_for_a_destination">Search for a destination</string>
+
 </resources>

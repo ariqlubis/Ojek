@@ -12,6 +12,7 @@
 
         <action android:id="@+id/action_signUp"
             app:destination="@+id/fragment_signUp"/>
+
     </fragment>
 
     <fragment

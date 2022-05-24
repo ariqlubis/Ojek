@@ -12,7 +12,9 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.104" />
         <entry key="app/src/main/res/drawable/bottom_nav_icon_color_selector.xml" value="0.113" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.104" />
+        <entry key="app/src/main/res/drawable/ic_pickup.xml" value="0.105" />
         <entry key="app/src/main/res/drawable/icon_back_arrow.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/shape_pickup_destination.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/shape_rectangle_20_fff.xml" value="0.2875" />
         <entry key="app/src/main/res/drawable/shape_rectangle_8_2085b0.xml" value="0.2875" />
         <entry key="app/src/main/res/drawable/shape_rectangle_8_8d92a3.xml" value="0.2875" />
@@ -20,10 +22,15 @@
         <entry key="app/src/main/res/drawable/shape_rectangle_8_ffc700.xml" value="0.3325" />
         <entry key="app/src/main/res/drawable/shape_rectangle_8_fff.xml" value="0.2875" />
         <entry key="app/src/main/res/drawable/shape_rectangle_outline_8_020202.xml" value="0.2875" />
-        <entry key="app/src/main/res/layout/activity_auth.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/shape_round_green.xml" value="0.1895" />
+        <entry key="app/src/main/res/layout/activity_auth.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.3296875" />
         <entry key="app/src/main/res/layout/activity_splash_screen2.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/content_maps.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_sign_up_success.xml" value="0.22" />
