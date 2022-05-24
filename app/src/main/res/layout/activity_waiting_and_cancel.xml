@@ -16,4 +16,4 @@
         android:textSize="30dp"
         android:textColor="#800000"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
