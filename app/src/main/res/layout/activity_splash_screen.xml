@@ -27,7 +27,6 @@
         android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="@string/ojek"
-        android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

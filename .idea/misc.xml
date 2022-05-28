@@ -24,18 +24,22 @@
         <entry key="app/src/main/res/drawable/shape_rectangle_outline_8_020202.xml" value="0.2875" />
         <entry key="app/src/main/res/drawable/shape_round_green.xml" value="0.1895" />
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1595744680851064" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash_screen2.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/content_home.xml" value="0.1595744680851064" />
         <entry key="app/src/main/res/layout/content_maps.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_sign_up_success.xml" value="0.22" />
         <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.1590678824721378" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1735" />
       </map>
     </option>
