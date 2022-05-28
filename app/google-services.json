@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "855618721752",
+    "firebase_url": "https://ojek-cccd7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ojek-cccd7",
+    "storage_bucket": "ojek-cccd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855618721752:android:ab3b79731dca2622c444ad",
+        "android_client_info": {
+          "package_name": "com.eighteam.ojek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855618721752-5vp9065gbrmvvkejnavcf4msfu5hg769.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbM9CXky9o0SfuSupVz6dxEuSYwFVzhuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855618721752-5vp9065gbrmvvkejnavcf4msfu5hg769.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

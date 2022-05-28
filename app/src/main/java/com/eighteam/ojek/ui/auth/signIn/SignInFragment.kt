@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.eighteam.ojek.HomeActivity
 import com.eighteam.ojek.R
 import com.eighteam.ojek.ui.auth.AuthActivity
 
@@ -27,6 +28,12 @@ class SignInFragment : Fragment() {
             val signUp = Intent(activity, AuthActivity::class.java)
             signUp.putExtra(AuthActivity.EXTRA_PAGE_REQUEST, 1)
             startActivity(signUp)
+        }
+
+        val btnSignIn: Button = view.findViewById(R.id.btnSignIn)
+        btnSignIn.setOnClickListener {
+            val maps = Intent(activity, HomeActivity::class.java)
+            startActivity(maps)
         }
     }
 

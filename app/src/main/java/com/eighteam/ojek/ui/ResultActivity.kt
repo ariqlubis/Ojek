@@ -2,6 +2,7 @@ package com.eighteam.ojek.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.eighteam.ojek.R
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
