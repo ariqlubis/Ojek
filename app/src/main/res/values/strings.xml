@@ -27,5 +27,9 @@
     <string name="sign_up_success">Sign Up Success!!!</string>
     <string name="search_for_a_pickup">Search for a pickup</string>
     <string name="search_for_a_destination">Search for a destination</string>
+    <string name="order_result">Order Result</string>
+    <string name="perjalananmu_telah_sampai_dengan_selamat">Perjalananmu Telah Sampai Dengan Selamat!</string>
+    <string name="todo">TODO</string>
+    <string name="dani_ramadhani">Dani Ramadhani</string>
 
 </resources>

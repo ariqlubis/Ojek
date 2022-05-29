@@ -43,13 +43,9 @@
         android:layout_height="300px"
         android:paddingLeft="50px"
         android:paddingTop="50px"
-        app:srcCompat="@drawable/driver" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="500px"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
+        app:srcCompat="@drawable/driver"
+        />
 
 </LinearLayout>
+
+
