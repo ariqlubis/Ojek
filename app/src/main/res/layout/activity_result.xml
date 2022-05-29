@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,21 +8,158 @@
     android:orientation="vertical"
     tools:context=".ui.ResultActivity">
 
-    <TextView
-        style="@style/EditText.PoppinsNormal14sp8D92A3"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:background="@drawable/top_bar"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Order Result"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="45dp"
+        android:text="Perjalananmu Telah Sampai Dengan
+        Selamat!"
+        android:textColor="#333333"
+        android:textFontWeight="500"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/driver" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dani Ramadhani"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="150px"/>
+                <TextView
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:text="BM 1771 ACO"
+                    android:textColor="#020202"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20px"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
         android:background="@drawable/shape_rectangle_outline_8_020202"
-        android:fontFamily="@font/poppins"
-        android:hint="Searching Driver......"
-        android:inputType="textEmailAddress"
-        android:minHeight="20dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dibayar Menggunakan IPB-Pay"
+            android:textColor="#020202"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins"
+            android:layout_margin="10px"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#020202"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/driver" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDR 14.000"
+                android:textColor="#020202"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:text="IPBPAY Deposit"
+                android:textColor="#020202"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDR 14.000"
+                android:textColor="#020202"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:padding="10dp"
-        tools:ignore="Autofill" />
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent"
+        android:gravity="end">
 
+    </LinearLayout>
 
-
-
+    <Button
+        android:id="@+id/btnSignIn"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Home"
+        android:textAllCaps="false" />
 
 </LinearLayout>
+
