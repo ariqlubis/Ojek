@@ -159,7 +159,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:text="Home"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="#ffffff"/>
 
 </LinearLayout>
 
