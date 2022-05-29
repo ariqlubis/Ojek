@@ -82,7 +82,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dibayar Menggunakan IPB-Pay"
+            android:text="Dibayar Menggunakan Cash"
             android:textColor="#020202"
             android:textSize="20dp"
             android:fontFamily="@font/poppins"
@@ -101,9 +101,9 @@
             android:layout_margin="10dp">
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="100px"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/driver" />
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/kisspng_motorcycle_scooter_vehicle_bicycle_logo_scooter_motorcycle_silhouette_transparent_png_a_5ceca357008689_1" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
             <TextView
                 android:layout_width="500px"
                 android:layout_height="wrap_content"
-                android:text="IPBPAY Deposit"
+                android:text="Deposit"
                 android:textColor="#020202"
                 android:textSize="15dp"
                 android:fontFamily="@font/poppins"
@@ -137,7 +137,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="IDR 14.000"
+                android:text="@string/idr_14_000"
                 android:textColor="#020202"
                 android:textSize="15dp"
                 android:fontFamily="@font/poppins"
@@ -157,7 +157,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
-        android:text="Home"
+        android:text="@string/home"
         android:textAllCaps="false"
         android:textColor="#ffffff"/>
     </LinearLayout>
