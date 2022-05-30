@@ -84,19 +84,19 @@
             android:layout_height="wrap_content"
             android:text="Dibayar Menggunakan Cash"
             android:textColor="#020202"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:fontFamily="@font/poppins"
-            android:layout_margin="10px"/>
+            android:layout_margin="10sp"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="5dp"
 
             android:textColor="#020202"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100px"
+            android:layout_height="25dp"
             android:orientation="horizontal"
             android:layout_margin="10dp">
             <ImageView

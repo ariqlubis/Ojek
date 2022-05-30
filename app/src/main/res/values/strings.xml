@@ -31,5 +31,12 @@
     <string name="perjalananmu_telah_sampai_dengan_selamat">Perjalananmu Telah Sampai Dengan Selamat!</string>
     <string name="todo">TODO</string>
     <string name="dani_ramadhani">Dani Ramadhani</string>
+    <string name="home">Home</string>
+    <string name="idr_14_000">IDR 14.000</string>
+    <string name="searching_for_driver">Searching for Driver......</string>
+    <string name="cancel">Cancel</string>
+    <string name="supriyadi_19">Supriyadi,19</string>
+    <string name="dani_34">Dani, 34</string>
+    <string name="supriyadi__19">Supriyadi, 19</string>
 
 </resources>
