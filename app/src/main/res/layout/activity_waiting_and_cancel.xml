@@ -34,12 +34,10 @@
     </LinearLayout>
 
 
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="170dp"
-        />
+        android:layout_margin="170dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -100,8 +98,7 @@
         android:text="Jenis Pembayaran"
         android:textColor="#020202"
         android:textSize="20sp"
-        android:layout_margin="5sp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         tools:ignore="RtlHardcoded,SmallSp" />
     <ImageView
         android:layout_width="50dp"
