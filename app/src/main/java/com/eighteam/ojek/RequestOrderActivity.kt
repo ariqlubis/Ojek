@@ -1,6 +1,7 @@
 package com.eighteam.ojek
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.View
@@ -76,6 +77,7 @@ class RequestOrderActivity : AppCompatActivity(), OnMapReadyCallback {
         iGoogleAPI = RetrofitClient.instance!!.create(IGoogleAPI::class.java)
     }
 
+    @SuppressLint("MissingPermission")
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
