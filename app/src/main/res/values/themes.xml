@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Ojek" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Ojek" parent="Theme.AppCompat.Light.DarkActionBar">
         !-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="android:windowFullscreen">true</item>
     </style>
     

@@ -13,6 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.eighteam.ojek.activities.LoginActivity
 import com.eighteam.ojek.databinding.ActivityHomeBinding
 import com.eighteam.ojek.ui.splashscreen.SplashScreenActivity
 import com.google.android.material.navigation.NavigationView
