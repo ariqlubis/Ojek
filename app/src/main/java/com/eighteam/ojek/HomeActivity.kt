@@ -26,8 +26,6 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var navView: NavigationView
     private lateinit var navController: NavController
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -84,7 +82,7 @@ class HomeActivity : AppCompatActivity() {
                             .setTextColor(
                                 ContextCompat.getColor(
                                     this@HomeActivity,
-                                    R.color.colorAccent
+                                    R.color.black
                                 )
                             )
                     }
@@ -95,8 +93,6 @@ class HomeActivity : AppCompatActivity() {
             true
         }
     }
-
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.home, menu)

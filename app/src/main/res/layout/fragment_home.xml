@@ -55,37 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="9"/>
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_add_location_alt_24"/>
-
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/layout_choose_destination"
-            android:layout_marginTop="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:fontFamily="@font/poppins"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:text="@string/test"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"/>
-
-
-        </LinearLayout>
-
-
     </LinearLayout>
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,37 +1,26 @@
 package com.eighteam.ojek
 
 import android.Manifest
-import android.animation.ValueAnimator
-import android.annotation.SuppressLint
 import android.content.pm.PackageManager
-import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.view.animation.LinearInterpolator
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import com.eighteam.ojek.BuildConfig.MAPS_API_KEY
 import com.eighteam.ojek.databinding.ActivityRequestOrderBinding
 import com.eighteam.ojek.model.SelectedPlaceEvent
 import com.eighteam.ojek.remote.IGoogleAPI
 import com.eighteam.ojek.remote.RetrofitClient
-import com.google.android.gms.common.internal.service.Common
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
 import com.google.android.material.snackbar.Snackbar
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
+import io.reactivex.disposables.CompositeDisposable
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.json.JSONObject
-import kotlin.math.round
 
 class RequestOrderActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -87,15 +76,6 @@ class RequestOrderActivity : AppCompatActivity(), OnMapReadyCallback {
         iGoogleAPI = RetrofitClient.instance!!.create(IGoogleAPI::class.java)
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 

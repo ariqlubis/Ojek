@@ -43,5 +43,13 @@
     <string name="welcome">Mau pergi kemana hari ini?</string>
     <string name="test">Test</string>
     <string name="title_activity_request_order">RequestOrderActivity</string>
+    <string name="sign_in_with_phone_number">Sign In with Phone Number</string>
+    <string name="continue_t">Continue</string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="continuep">Continue</string>
+    <string name="registerp">Register</string>
+    <string name="sign_in_with_google">SIGN IN with Google</string>
 
 </resources>

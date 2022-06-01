@@ -11,7 +11,9 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.108" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.104" />
         <entry key="app/src/main/res/drawable/bottom_nav_icon_color_selector.xml" value="0.113" />
+        <entry key="app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.1925" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.263" />
+        <entry key="app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.104" />
         <entry key="app/src/main/res/drawable/ic_pickup.xml" value="0.105" />
         <entry key="app/src/main/res/drawable/icon_back_arrow.xml" value="0.1105" />
@@ -30,8 +32,10 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_result.xml" value="0.2033514492753623" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash_screen2.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/activity_waiting_and_cancel.xml" value="0.2033514492753623" />
         <entry key="app/src/main/res/layout/app_bar_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_home.xml" value="0.1595744680851064" />
         <entry key="app/src/main/res/layout/content_maps.xml" value="0.1" />
@@ -41,10 +45,14 @@
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_sign_up_success.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/layout_register.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/layout_sign_in.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_sign_in_.xml" value="0.33" />
         <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.33" />
         <entry key="app/src/main/res/layout/nav_header_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/test.xml" value="0.1590678824721378" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.32864583333333336" />
+        <entry key="app/src/main/res/menu/home.xml" value="0.184375" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1735" />
       </map>
     </option>

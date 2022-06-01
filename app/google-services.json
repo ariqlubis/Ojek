@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "855618721752",
-    "firebase_url": "https://ojek-cccd7-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "ojek-cccd7",
-    "storage_bucket": "ojek-cccd7.appspot.com"
+    "project_number": "957028145436",
+    "project_id": "ojek-ipb",
+    "storage_bucket": "ojek-ipb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:855618721752:android:ab3b79731dca2622c444ad",
+        "mobilesdk_app_id": "1:957028145436:android:430bae97d4be43354ac2d9",
         "android_client_info": {
           "package_name": "com.eighteam.ojek"
         }
       },
       "oauth_client": [
         {
-          "client_id": "855618721752-5vp9065gbrmvvkejnavcf4msfu5hg769.apps.googleusercontent.com",
+          "client_id": "957028145436-d6aklv9ndgjkm0msttf1j42nsogg5llp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCbM9CXky9o0SfuSupVz6dxEuSYwFVzhuc"
+          "current_key": "AIzaSyBTZ0k6XdJdZ1V9e3ST31TyK5LdJXNKTfU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "855618721752-5vp9065gbrmvvkejnavcf4msfu5hg769.apps.googleusercontent.com",
+              "client_id": "957028145436-d6aklv9ndgjkm0msttf1j42nsogg5llp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
