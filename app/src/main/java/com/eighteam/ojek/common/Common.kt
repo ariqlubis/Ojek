@@ -28,4 +28,16 @@ object Common {
             .append(currentUser!!.lastName)
             .toString()
     }
+
+    fun formatDuration(duration: String): CharSequence? {
+        if(duration.contains("mins"))
+            return duration.substring(0, duration.length-1)
+        else
+            return duration
+    }
+
+    fun formatAddress(startAddress: String): CharSequence? {
+        val firstIndexComma = startAddress.indexOf(",")
+        return startAddress.substring(0, firstIndexComma)
+    }
 }

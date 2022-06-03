@@ -2,21 +2,21 @@ package com.eighteam.ojek.model
 
 import com.google.android.gms.maps.model.LatLng
 
-data class SelectedPlaceEvent(var pickUp: LatLng, var destination: LatLng) {
-    val iPickUp: String
+data class SelectedPlaceEvent(var origin: LatLng, var destination: LatLng) {
+    val originString: String
         get() =
             StringBuilder()
-                .append(pickUp.latitude)
+                .append(origin.latitude)
                 .append(",")
-                .append(pickUp.longitude)
+                .append(origin.longitude)
                 .toString()
 
 
-    val iDestination: String
+    val destinationString: String
         get() =
             StringBuilder()
                 .append(destination.latitude)
                 .append(",")
-                .append(pickUp.longitude)
+                .append(origin.longitude)
                 .toString()
 }
