@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import com.eighteam.ojek.HomeActivity
 import com.eighteam.ojek.R
+import com.eighteam.ojek.RequestOrderActivity
 import com.eighteam.ojek.activities.LoginActivity
 
 class SplashScreenActivity : AppCompatActivity() {
