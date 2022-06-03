@@ -1,95 +1,96 @@
 package com.eighteam.ojek.activities
 
-import android.app.ProgressDialog
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
-import android.util.Patterns
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
-import com.eighteam.ojek.HomeActivity
 import com.eighteam.ojek.R
-import com.eighteam.ojek.databinding.ActivitySignUpBinding
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.eighteam.ojek.model.PassengerModel
+import com.google.firebase.database.*
 
-class SignUpActivity : AppCompatActivity() {
-    private lateinit var binding: ActivitySignUpBinding
-    private lateinit var actionBar: ActionBar
-    private lateinit var progressDialog: ProgressDialog
-    private lateinit var firebaseAuth: FirebaseAuth
-    private var name = ""
-    private var email = ""
-    private var password = ""
-    private var phone = ""
+class SignUpActivity : AppCompatActivity(), View.OnClickListener {
 
+    private lateinit var etFirstName: EditText
+    private lateinit var etLastName: EditText
+    private lateinit var etEmail: EditText
+    private lateinit var etPassword: EditText
+    private lateinit var etPhone: EditText
+
+    private lateinit var btnSignUp: Button
+    private lateinit var btnLogin: Button
+
+    private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySignUpBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_sign_up)
 
-        //Configure actionbar
-        actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
+        etFirstName = findViewById(R.id.etFirstName)
+        etLastName = findViewById(R.id.etLastName)
+        etEmail = findViewById(R.id.etEmail)
+        etPassword = findViewById(R.id.etPassword)
+        etPhone = findViewById(R.id.etPhoneNumber)
 
-        progressDialog = ProgressDialog(this)
-        progressDialog.setTitle("Please wait")
-        progressDialog.setMessage("Logging in...")
-        progressDialog.setCanceledOnTouchOutside(false)
+        databaseReference = FirebaseDatabase.getInstance().reference
 
-        // init firebase auth
-        firebaseAuth = FirebaseAuth.getInstance()
+        btnSignUp = findViewById(R.id.btnSignUp)
+        btnSignUp.setOnClickListener(this)
 
-        binding.btnSignUp.setOnClickListener {
-            validateData()
+        btnLogin = findViewById(R.id.btnLogin)
+        btnLogin.setOnClickListener(this)
+    }
+
+    private fun savePassengerData() {
+        // getting values
+        val firstName = etFirstName.text.toString().trim()
+        val lastName = etLastName.text.toString().trim()
+        val email = etEmail.text.toString().trim()
+        val password = etPassword.text.toString()
+        val phone = etPhone.text.toString().trim()
+
+        if(firstName.isEmpty())
+            etFirstName.error = "Please enter your first name"
+        else if(lastName.isEmpty())
+            etLastName.error = "Please enter your first name"
+        else if(email.isEmpty())
+            etEmail.error = "Please enter your email"
+        else if(password.isEmpty())
+            etPassword.error = "Please enter your password"
+        else if(phone.isEmpty())
+            etPhone.error = "Please enter your phone number"
+        else {
+            val passenger = PassengerModel(firstName, lastName, email)
+            databaseReference.child("Passenger").addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if(snapshot.hasChild(phone)) {
+                        Toast.makeText(this@SignUpActivity, "Phone number is already registered", Toast.LENGTH_LONG).show()
+                    } else {
+                        databaseReference.child("Passenger").child(phone).setValue(passenger)
+                            .addOnCompleteListener {
+                                Toast.makeText(this@SignUpActivity, "Register Successfully", Toast.LENGTH_SHORT).show()
+                                finish()
+                            }
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO("Not yet implemented")
+                }
+
+            })
         }
     }
 
-    private fun validateData() {
-        email = binding.edtEmail.text.toString().trim()
-        password = binding.edtPassword.text.toString().trim()
-
-        // validate data
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            binding.edtEmail.error = "Invalid email format"
-        } else if(TextUtils.isEmpty(password)) {
-            binding.edtPassword.error = "Please enter password"
-        } else if (password.length < 8) {
-            binding.edtPassword.error = "Password must at least 8 characters long"
-        } else {
-            firebaseSignUp()
+    override fun onClick(p0: View?) {
+        when(p0?.id) {
+            R.id.btnSignUp -> {
+                savePassengerData()
+            }
+            R.id.btnLogin -> {
+                onBackPressed()
+            }
         }
-
-    }
-
-    private fun firebaseSignUp() {
-        progressDialog.show()
-
-        //create acc
-        firebaseAuth.createUserWithEmailAndPassword(email, password)
-            .addOnFailureListener { e->
-                progressDialog.dismiss()
-                Toast.makeText(this, "SignUp failed due to ${e.message}", Toast.LENGTH_SHORT).show()
-
-            }
-            .addOnSuccessListener {
-                val firebaseUser = firebaseAuth.currentUser
-                val email = firebaseUser!!.email
-                Toast.makeText(this, "Account created with email $email", Toast.LENGTH_SHORT).show()
-
-                startActivity(Intent(this, HomeActivity::class.java))
-                finish()
-
-            }
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return super.onSupportNavigateUp()
     }
 }

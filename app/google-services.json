@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "957028145436",
-    "project_id": "ojek-ipb",
-    "storage_bucket": "ojek-ipb.appspot.com"
+    "project_number": "581278231708",
+    "project_id": "ojek-ipb-8b8ea",
+    "storage_bucket": "ojek-ipb-8b8ea.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:957028145436:android:430bae97d4be43354ac2d9",
+        "mobilesdk_app_id": "1:581278231708:android:fd452ea1fb9d6188611159",
         "android_client_info": {
           "package_name": "com.eighteam.ojek"
         }
       },
       "oauth_client": [
         {
-          "client_id": "957028145436-d6aklv9ndgjkm0msttf1j42nsogg5llp.apps.googleusercontent.com",
+          "client_id": "581278231708-j25beol1pbcl9qa6tc27mlinhi5u7s04.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBTZ0k6XdJdZ1V9e3ST31TyK5LdJXNKTfU"
+          "current_key": "AIzaSyAHxlqvVb8NLdL5BZBPvovFnHg6Q7O4kKc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "957028145436-d6aklv9ndgjkm0msttf1j42nsogg5llp.apps.googleusercontent.com",
+              "client_id": "581278231708-j25beol1pbcl9qa6tc27mlinhi5u7s04.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

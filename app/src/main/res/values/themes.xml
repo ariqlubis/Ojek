@@ -17,22 +17,6 @@
     <style name="SplashTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="android:windowFullscreen">true</item>
     </style>
-    
-    <style name="LoginTheme" parent="FirebaseUI">
-        <item name="colorButtonNormal">@color/black</item>
-        <item name="colorControlNormal">@android:color/darker_gray</item>
-        <item name="colorControlActivated">@android:color/white</item>
-        <item name="colorControlHighlight">@android:color/white</item>
-
-        <item name="android:textColor">@android:color/black</item>
-        <item name="android:textColorPrimary">@android:color/white</item>
-        <item name="android:textColorSecondary">@android:color/black</item>
-        <item name="android:textColorHint">@android:color/darker_gray</item>
-
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
 
     <style name="DialogTheme" parent="android:Theme.Dialog">
 
@@ -43,32 +27,11 @@
         <item name="android:windowIsFloating">false</item>
     </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <style name="TextView" />
 
-    <style name="TextView.PoppinsNormal32sp020202">
+    <style name="TextView.PoppinsNormal32spFFF">
         <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textColor">#202020</item>
+        <item name="android:textColor">#FFF</item>
         <item name="android:textSize">32sp</item>
     </style>
 
@@ -80,7 +43,7 @@
 
     <style name="TextView.PoppinsNormal16sp020202">
         <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textColor">#202020</item>
+        <item name="android:textColor">#FFF</item>
         <item name="android:textSize">16sp</item>
     </style>
 
@@ -118,8 +81,9 @@
 
     <style name="EditText.PoppinsNormal14sp8D92A3">
         <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textColor">#FFF</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
     </style>
 
     <style name="Button" />

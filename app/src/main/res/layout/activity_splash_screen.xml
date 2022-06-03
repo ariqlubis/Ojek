@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#14171A"
     tools:context=".ui.splashscreen.SplashScreenActivity">
 
     <ImageView
@@ -11,7 +12,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:gravity="center"
-        android:src="@drawable/logoipb"
+        android:src="@drawable/ipbremovebgpreview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -22,6 +23,7 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/TextView.PoppinsNormal32spFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"

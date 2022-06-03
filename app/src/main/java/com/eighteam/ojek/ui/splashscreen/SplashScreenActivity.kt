@@ -1,13 +1,11 @@
 package com.eighteam.ojek.ui.splashscreen
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.eighteam.ojek.HomeActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.eighteam.ojek.R
-import com.eighteam.ojek.RequestOrderActivity
 import com.eighteam.ojek.activities.LoginActivity
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -16,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, HomeActivity::class.java))
-        }, 2000)
+            startActivity(Intent(this, LoginActivity::class.java))
+        }, 3000)
     }
 }

@@ -10,7 +10,6 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.eighteam.ojek.BuildConfig.MAPS_API_KEY
-import com.eighteam.ojek.activities.WaitingCancel
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -72,9 +71,6 @@ class RequestOrderActivity : AppCompatActivity(), OnMapReadyCallback, View.OnCli
         when(p0?.id) {
 
             R.id.btn_order -> {
-                val moveIntent = Intent(this@RequestOrderActivity, WaitingCancel::class.java)
-                startActivity(moveIntent)
-
             }
         }
     }
